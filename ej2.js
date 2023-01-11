@@ -14,26 +14,31 @@ const alumns = [
 		{name: 'Raquel Benito', T1: true, T2: true, T3: true} //OK
 ]
 
-let isApproved;
-let contar = 0;
+
+
+
 
 for (const alumn of alumns) {
 
-    for (const key in alumn) {
+    let approved = 0;
 
-        for (const value of key) {
+    alumn.T1 && approved++;
+    alumn.T2 && approved++;
+    alumn.T3 && approved++;
 
-            if (T1 && T2 || T1 && T3 || T2 && T3 == true) {
-                for (let i = 0; i <= 2; i++) {
-                    contar += i;
-                    
-                }
-            }
-            
-            console.log(contar);
-        }
+   //approved >= 2 ? alumn.isAproved = true : alumn.isAproved = false >> explicación santi
 
-    }
+   if (approved >= 2){
+    alumn.isAproved = true;
+   } else {
+    alumn.isAproved = false;
+   }
+
+   //con el if - else, yo lo entiendo mejor.
 
 }
+
+console.log(alumns);
+
+
 
