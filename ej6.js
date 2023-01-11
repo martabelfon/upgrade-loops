@@ -10,3 +10,17 @@ const toys = [
     {id: 40, name: 'El gato con Guantes'},
     {id: 40, name: 'El gato felix'}
     ]
+
+for (const toy of toys) {
+    
+    //entrar en name
+    for (const iterator of object) {
+        for (const key in toy.name) {
+    
+            console.log(key)
+    }
+    //si no inlcuye gato, mostrar
+    // if (toy.name.includes("gato"))
+        
+}
+}
