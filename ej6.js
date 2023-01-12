@@ -11,16 +11,12 @@ const toys = [
     {id: 40, name: 'El gato felix'}
     ]
 
-for (const toy of toys) {
-    
-    //entrar en name
-    for (const iterator of object) {
-        for (const key in toy.name) {
-    
-            console.log(key)
-    }
-    //si no inlcuye gato, mostrar
-    // if (toy.name.includes("gato"))
-        
+for (let i = 0; i < toys.length; i++) {
+
+    if (toys[i].name.includes("gato")) {
+        toys.splice(i,1);
+        i--;    
+    } 
+ 
 }
-}
+console.log(toys);

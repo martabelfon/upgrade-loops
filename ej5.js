@@ -8,16 +8,28 @@ const placesToTravel = [{id: 5, name: 'Japan'}, {id: 11, name: 'Venecia'}, {id: 
 
 
 for (const place of placesToTravel) {
-
-        for (const key in place) {
-            // let a = placesToTravel[key];
-            // if (place[key] == 11 || place[key] == 40) {
-
-            //     place.splice(0,0);
-
-            // }
-            console.log(place[key]);
-           
-        }
-
+    // console.log(place.id);
+       if (place.id == 11 || place.id == 40) {
+        place.splice(0,0);
+       }
+       console.log(place);
 }
+
+
+
+
+
+
+
+
+
+// for (const key in place) {
+//     // let a = placesToTravel[key];
+//     // if (place[key] == 11 || place[key] == 40) {
+
+//     //     place.splice(0,0);
+
+//     // }
+//     console.log(place[key]);
+   
+// }
