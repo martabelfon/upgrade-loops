@@ -14,8 +14,11 @@ const toys = [
 ]
 
 for (const toy of toys) {
-	for (const key in toy.sellCount) {
-	console.log(key);
-		
+	
+	if (toy.sellCount >= 15) {
+		popularToys.push(toy)
 	}
+	
 }
+
+console.log(popularToys)

@@ -10,14 +10,14 @@ const placesToTravel = [{id: 5, name: 'Japan'}, {id: 11, name: 'Venecia'}, {id: 
 for (const place of placesToTravel) {
 
         for (const key in place) {
-            let a = placesToTravel[key];
-            console.log(key);
+            // let a = placesToTravel[key];
+            // if (place[key] == 11 || place[key] == 40) {
+
+            //     place.splice(0,0);
+
+            // }
+            console.log(place[key]);
            
         }
-    
-    
-    // if (!id == 11 || !id == 40) {
-        // console.log(placesToTravel);
-    // }
 
 }
